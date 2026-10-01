@@ -242,4 +242,4 @@
 
 
 ## 8. Link de Figma
-[https://www.figma.com/community/file/1687603300330352968](https://www.figma.com/design/gcl8LpVofdz7FnqfA7Y04B/Prototipo--Community-?node-id=0-1&m=dev&t=HsWFWz7csJRHIPhI-1)
+https://www.figma.com/design/gcl8LpVofdz7FnqfA7Y04B/Prototipo--Community-?node-id=0-1&m=dev&t=pHZ9xjHzfgwoJoEw-1
