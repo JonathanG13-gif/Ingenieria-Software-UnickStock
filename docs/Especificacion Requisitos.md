@@ -99,11 +99,11 @@
 
 **RF-009 — Buscar producto por código**
 
-Descripción: El sistema debe permitir buscar un producto escribiendo su código.
-Origen: Visión del producto. Confirmado en la entrevista: cuando un cliente pregunta por una talla o color hay que ir al estante a revisar. Se separó de RF-003 porque, aunque las dos son formas de encontrar un producto, no son el mismo dato ni se escriben igual.
-Prioridad: Alta.
-Criterio de aceptación: al escribir el código de un producto, aparece en la lista de resultados junto con sus variantes disponibles.
-Relaciones: CU-08 Buscar producto por código; RF-003; RNF-REN-001.
+-Descripción: El sistema debe permitir buscar un producto escribiendo su código.
+-Origen: Visión del producto. Confirmado en la entrevista: cuando un cliente pregunta por una talla o color hay que ir al estante a revisar. Se separó de RF-003 porque, aunque las dos son formas de encontrar un producto, no son el mismo dato ni se escriben igual.
+-Prioridad: Alta.
+-Criterio de aceptación: al escribir el código de un producto, aparece en la lista de resultados junto con sus variantes disponibles.
+-Relaciones: CU-08 Buscar producto por código; RF-003; RNF-REN-001.
 
 ---
 
