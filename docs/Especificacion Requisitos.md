@@ -15,7 +15,7 @@
 - Historial de ventas por día.
 
 **Fuera del alcance:**
-- Facturación electrónica / CFDI.
+- Facturación electrónica.
 - Cobro con tarjeta integrado (pasarela de pago).
 - Tienda en línea con carrito de compras.
 - Multi-sucursal (control de más de una tienda a la vez).
@@ -60,7 +60,7 @@
 - Origen: Visión del producto. **Confirmado** en la entrevista: cuando un cliente pregunta por una talla o color hay que ir al estante a revisar.
 - Prioridad: Alta.
 - Criterio de aceptación: al escribir parte del nombre de un producto, aparece en la lista de resultados junto con sus variantes disponibles.
-- Relaciones: CU-03 Buscar producto; RNF-REN-001.
+- Relaciones: CU-03 Buscar producto por nombre; RNF-REN-001.
 
 **RF-004 — Mostrar productos agotados**
 - Descripción: El sistema debe mostrar el producto en una lista visible de "agotados" dentro del panel en cuanto el stock de esa variante llegue a cero.
@@ -155,11 +155,12 @@
 |---|---|---|
 | CU-01 Registrar venta | Vendedor | RF-001, RF-006 |
 | CU-02 Registrar entrada de mercancía | Dueño/administrador | RF-002 |
-| CU-03 Buscar producto | Vendedor y Dueño/administrador | RF-003 |
+| CU-03 Buscar producto por nombre | Vendedor y Dueño/administrador | RF-003 |
 | CU-04 Consultar productos agotados | Vendedor y Dueño/administrador | RF-004 |
 | CU-05 Registrar devolución | Vendedor | RF-005 |
 | CU-06 Configurar nivel mínimo de stock | Dueño/administrador | RF-007 |
 | CU-07 Consultar historial de ventas por día | Dueño/administrador | RF-008 |
+| CU-08 Buscar producto por código | Vendedor y Dueño/administrador | RF-009 |
 
 
 ---
@@ -209,12 +210,12 @@
 | RF-006 | Visión del producto; supuesto | CU-01 Registrar venta (flujo alterno) |
 | RF-007 | Visión del producto; supuesto | CU-06 Configurar nivel mínimo de stock |
 | RF-008 | Visión del producto; supuesto | CU-07 Consultar historial de ventas por día |
-| RF-009 | Visión del producto; supuesto | CU-03 Buscar producto por codigo |
+| RF-009 | Visión del producto; confirmado en la entrevista | CU-08 Buscar producto por código |
 | RNF-USA-001 | Visión del producto (usabilidad); confirmado con lo del papel en la entrevista | CU-02 |
 | RNF-USA-002 | Visión del producto (usabilidad) | CU-01 |
 | RNF-CON-001 | Reglas de negocio de la Visión del producto | CU-01, CU-02, CU-05 |
 | RNF-DIS-001 | Entrevista (la tienda abre a las diez) | Todos |
-| RNF-REN-001 | Entrevista (catálogo de ~150 productos y 2 usuarios) | CU-03 |
+| RNF-REN-001 | Entrevista (catálogo de ~150 productos y 2 usuarios) | CU-03, CU-08 |
 | RNF-FLE-001 | Visión del producto (flexibilidad de datos) | CU-02 |
 
 
@@ -225,7 +226,8 @@
 | 1.0 | Primera versión: propósito, alcance, tipo de sistema y requisitos iniciales (Visión del producto). |
 | 1.1 | Se agregaron los requisitos no funcionales agrupados por atributo, con los valores numéricos aún pendientes. |
 | 1.2 | Después de la entrevista: se llenaron los valores numéricos de los requisitos no funcionales, se agregó el campo Origen y Prioridad a cada requisito funcional, se confirmó que lo de multi-sucursal no aplica y sigue fuera del alcance. |
-| 1.3 | Tras validar el documento contra la plantilla: el campo Origen ahora distingue lo confirmado de lo supuesto; se agregaron las relaciones entre requisitos; se aclararon los criterios de aceptación de RF-002 y RF-004; los requisitos no funcionales pasaron a la nomenclatura con código de atributo (por ejemplo RNF-REN-001),
+| 1.3 | Tras validar el documento contra la plantilla: el campo Origen ahora distingue lo confirmado de lo supuesto; se agregaron las relaciones entre requisitos; se aclararon los criterios de aceptación de RF-002 y RF-004; los requisitos no funcionales pasaron a la nomenclatura con código de atributo (por ejemplo RNF-REN-001). |
+| 1.4 | Tras la revisión de mi dupla: se quitaron la "y" y la "o" de los nombres de los casos de uso; por eso la búsqueda se separó en RF-003 (CU-03 Buscar producto por nombre) y RF-009 (CU-08 Buscar producto por código); el diagrama de casos de uso se actualizó para que coincida con los CU-01 a CU-08 de la sección 5; se agregó el enlace del prototipo en Figma. |
 
 
 ---
