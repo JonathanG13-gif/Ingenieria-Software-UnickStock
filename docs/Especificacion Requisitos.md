@@ -60,7 +60,7 @@
 - Origen: Visión del producto. **Confirmado** en la entrevista: cuando un cliente pregunta por una talla o color hay que ir al estante a revisar.
 - Prioridad: Alta.
 - Criterio de aceptación: al escribir parte del nombre de un producto, aparece en la lista de resultados junto con sus variantes disponibles.
-- Relaciones: CU-03 Buscar producto; RNF-REN-001 y finalmente tambien sale con su codigo.
+- Relaciones: CU-03 Buscar producto; RNF-REN-001.
 
 **RF-004 — Mostrar productos agotados**
 - Descripción: El sistema debe mostrar el producto en una lista visible de "agotados" dentro del panel en cuanto el stock de esa variante llegue a cero.
