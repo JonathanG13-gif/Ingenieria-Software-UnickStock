@@ -142,16 +142,6 @@
 
 ## 5. Casos de uso
 
-| Caso de uso | Actor principal |
-|---|---|
-| CU-01 Registrar venta | Vendedor |
-| CU-02 Registrar entrada de mercancía | Dueño/administrador |
-| CU-03 Buscar producto | Vendedor (también el dueño) |
-| CU-04 Consultar productos agotados | Dueño/administrador (también el vendedor) |
-| CU-05 Registrar devolución | Vendedor |
-| CU-06 Configurar nivel mínimo de stock | Dueño/administrador |
-| CU-07 Consultar historial de ventas por día | Dueño/administrador |
-
 
 # Casos de uso — UnikStock
 
@@ -161,7 +151,7 @@
 
 **Actores:** Vendedor (encargado de mostrador) y Dueño/administrador.
 
-| Caso de uso | Actor(es) | Requisitos funcionales que realiza |
+| Caso de uso | Actor(es) principal | Requisitos funcionales que realiza |
 |---|---|---|
 | CU-01 Registrar venta | Vendedor | RF-001, RF-006 |
 | CU-02 Registrar entrada de mercancía | Dueño/administrador | RF-002 |
