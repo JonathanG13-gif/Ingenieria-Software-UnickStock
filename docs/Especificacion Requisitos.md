@@ -6,7 +6,7 @@
 ## 1. Propósito y alcance
 
 
-**Propósito:** Este documento define qué debe hacer UnikStock y bajo qué condiciones, para que me sirva de referencia mientras lo construyo y como criterio para saber si ya quedó bien. Va dirigido a mí mismo, porque soy el desarrollador y el dueño del negocio (Unik Syle) al mismo tiempo.
+**Propósito:** Hacer UnikStock y bajo qué condiciones, para que me sirva de referencia mientras lo construyo y como criterio para saber si ya quedó bien. Va dirigido a mí mismo, porque soy el desarrollador y el dueño/co propietario del negocio (Unik Syle) al mismo tiempo.
 
 **Dentro del alcance:**
 - Registro de productos por categoría (ropa, relojes, collares, gorras) con nombre, categoría, variante (talla/color/modelo), precio y cantidad en stock.
