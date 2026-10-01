@@ -55,12 +55,12 @@
 - Criterio de aceptación: al registrar una entrada con variante, cantidad y fecha, el stock de esa variante sube exactamente en esa cantidad y la entrada queda guardada con su fecha.
 - Relaciones: CU-02 Registrar entrada de mercancía; RNF-USA-001.
 
-**RF-003 — Buscar producto por nombre o código**
-- Descripción: El sistema debe permitir buscar un producto por nombre o código.
+**RF-003 — Buscar producto por nombre**
+- Descripción: El sistema debe permitir buscar un producto por nombre.
 - Origen: Visión del producto. **Confirmado** en la entrevista: cuando un cliente pregunta por una talla o color hay que ir al estante a revisar.
 - Prioridad: Alta.
-- Criterio de aceptación: al escribir parte del nombre o el código de un producto, aparece en la lista de resultados junto con sus variantes disponibles.
-- Relaciones: CU-03 Buscar producto; RNF-REN-001.
+- Criterio de aceptación: al escribir parte del nombre de un producto, aparece en la lista de resultados junto con sus variantes disponibles.
+- Relaciones: CU-03 Buscar producto; RNF-REN-001 y finalmente tambien sale con su codigo.
 
 **RF-004 — Mostrar productos agotados**
 - Descripción: El sistema debe mostrar el producto en una lista visible de "agotados" dentro del panel en cuanto el stock de esa variante llegue a cero.
