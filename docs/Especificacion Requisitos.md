@@ -203,12 +203,13 @@
 |---|---|---|
 | RF-001 | Visión del producto; confirmado en la entrevista | CU-01 Registrar venta |
 | RF-002 | Visión del producto; confirmado en la entrevista | CU-02 Registrar entrada de mercancía |
-| RF-003 | Visión del producto; confirmado en la entrevista | CU-03 Buscar producto |
+| RF-003 | Visión del producto; confirmado en la entrevista | CU-03 Buscar producto por nombre |
 | RF-004 | Visión del producto; supuesto | CU-04 Consultar productos agotados |
 | RF-005 | Visión del producto; supuesto | CU-05 Registrar devolución |
 | RF-006 | Visión del producto; supuesto | CU-01 Registrar venta (flujo alterno) |
 | RF-007 | Visión del producto; supuesto | CU-06 Configurar nivel mínimo de stock |
 | RF-008 | Visión del producto; supuesto | CU-07 Consultar historial de ventas por día |
+| RF-009 | Visión del producto; supuesto | CU-03 Buscar producto por codigo |
 | RNF-USA-001 | Visión del producto (usabilidad); confirmado con lo del papel en la entrevista | CU-02 |
 | RNF-USA-002 | Visión del producto (usabilidad) | CU-01 |
 | RNF-CON-001 | Reglas de negocio de la Visión del producto | CU-01, CU-02, CU-05 |
