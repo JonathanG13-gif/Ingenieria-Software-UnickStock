@@ -190,3 +190,7 @@
   - El criterio de RF-004 tampoco decía qué tan rápido debía aparecer el producto en la lista de agotados.
   - RNF-FLE-001 no tenía nada que medir.
 - Cambios que hice a partir de esa revisión: reescribí los criterios de RF-002 y RF-004, le puse métrica a RNF-FLE-001 (4 de 4 categorías) y marqué en Origen cada requisito como confirmado o supuesto.
+
+
+## 8. Link de Figma
+https://www.figma.com/community/file/1687603300330352968
