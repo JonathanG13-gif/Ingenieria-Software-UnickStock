@@ -231,13 +231,13 @@
 
 ## 7. Revisión de la dupla
 
-- Nombre de mi dupla: Ian Adolfo Lopez
-- Fecha de revisión: 
+- Nombre de mi dupla: Ian Adolfo Lopez Maldonado
+- Fecha de revisión: 30/09/2026 
 - Comentarios recibidos:
   - El criterio de aceptación de RF-002 mezclaba dos cosas (dar de alta y sumar) y decía "de inmediato" sin medirlo.
   - El criterio de RF-004 tampoco decía qué tan rápido debía aparecer el producto en la lista de agotados.
-  - RNF-FLE-001 no tenía nada que medir.
-- Cambios que hice a partir de esa revisión: reescribí los criterios de RF-002 y RF-004, le puse métrica a RNF-FLE-001 (4 de 4 categorías) y marqué en Origen cada requisito como confirmado o supuesto.
+  - Aclaración de casos de uso en uso de palabras y/o.
+- Cambios que hice a partir de esa revisión: reescribí los criterios de RF-002 y RF-004, le puse métrica a RNF-FLE-001 (4 de 4 categorías) y marqué en Origen cada requisito como confirmado o supuesto y cambie los casos de uso de tal manera que el lenguaje no incluyera ni y ni o.
 
 
 ## 8. Link de Figma
