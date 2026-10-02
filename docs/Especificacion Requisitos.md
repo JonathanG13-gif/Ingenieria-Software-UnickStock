@@ -244,4 +244,4 @@
 
 
 ## 8. Link de Figma
-https://www.figma.com/design/gcl8LpVofdz7FnqfA7Y04B/Prototipo--Community-?node-id=0-1&m=dev&t=pHZ9xjHzfgwoJoEw-1
+https://www.figma.com/design/gcl8LpVofdz7FnqfA7Y04B/Prototipo--Community-?node-id=0-1&m=dev&t=oWjhfOKmqzWjSiWB-1
