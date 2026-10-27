@@ -1,0 +1,21 @@
+erDiagram
+    PACIENTE ||--o{ CITA : agenda
+    PACIENTE ||--|| CUENTA : tiene
+    CUENTA ||--o{ PAGO : registra
+    VETERINARIO
+
+    PACIENTE {
+        int id
+        string nombre
+        string especie
+    }
+    CITA {
+        int id
+        date fecha
+        string motivo
+    }
+    PAGO {
+        int id
+        decimal monto
+        date fecha
+    }
