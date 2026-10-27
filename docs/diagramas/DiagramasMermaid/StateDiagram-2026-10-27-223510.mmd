@@ -1,0 +1,9 @@
+stateDiagram-v2
+    [*] --> Agendada
+    Agendada --> Confirmada: el dueno confirma
+    Agendada --> Cancelada: se cancela a tiempo
+    Agendada --> Reprogramada: el dueno cambia la fecha
+    Confirmada --> Atendida: llega y pasa a consulta
+    Confirmada --> NoAsistio: no se presenta
+    Atendida --> [*]
+    NoAsistio --> [*]
