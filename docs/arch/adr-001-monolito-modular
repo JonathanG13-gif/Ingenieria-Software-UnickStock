@@ -1,1 +1,36 @@
+# ADR-001
 
+
+## 1. Título
+
+Construir UnikStock como un monolito modular, con una sola base de datos.
+
+## 2. Estado
+
+Aceptada.
+
+## 3. Contexto
+
+UnikStock es el sistema de inventario de una tienda de ropa y accesorios, Unik Syle. Solo lo usan dos personas: el dueño y un vendedor de medio tiempo. El catálogo es de hasta 150 productos y la tienda es una sola, porque manejar varias sucursales quedó fuera del alcance.
+
+Lo más importante para mí es que el stock que muestra el sistema sea el que realmente hay en el estante y que el sistema no deje registrar una venta que deje una variante en negativo. También necesito que las búsquedas respondan en menos de 5 segundos.
+
+Como voy a trabajar de forma ágil, espero que los requisitos cambien sobre la marcha, sobre todo por las variantes distintas de cada categoría.
+
+## 4. Decisión
+
+Voy a construir UnikStock como un solo programa que se despliega junto, pero dividido por dentro en tres módulos: Catálogo, Inventario y Ventas. Todos usan una sola base de datos.
+
+La regla es que un módulo no lee las tablas de otro. Por ejemplo, cuando Ventas registra una venta, le pide a Inventario que descuente el stock, en lugar de modificarlo por su cuenta.
+
+Descarté los microservicios porque, siendo yo una sola persona con dos usuarios, tener varios servicios, varias bases de datos y varios despliegues sería mucho más trabajo del que el problema necesita. También descarté un monolito sin módulos, porque con el tiempo se me mezclarían las reglas de ventas con las de inventario y sería más difícil cambiar algo sin romper otra cosa.
+
+## 5. Consecuencias
+
+**Lo bueno:**
+- Solo hay una cosa que desplegar y mantener.
+- Descontar el stock y registrar la venta pueden hacerse en una sola operación, lo que me ayuda a cuidar que el stock no se descuadre.
+- Cada módulo se puede cambiar sin tocar los demás, siempre que respete su interfaz.
+
+**Lo malo:**
+- Si un módulo falla, puede tumbar todo el sistema.
