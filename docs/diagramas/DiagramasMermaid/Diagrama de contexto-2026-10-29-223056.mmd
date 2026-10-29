@@ -1,0 +1,9 @@
+flowchart TD
+    dueno([Dueño o administrador])
+    vend([Vendedor de mostrador])
+    sis[UnikStock<br/>control de inventario de Unik Syle]
+
+    dueno -->|registra mercancía y revisa qué se agota| sis
+    vend -->|registra ventas y consulta disponibilidad| sis
+
+    style sis fill:#ff5d00,color:#fff
