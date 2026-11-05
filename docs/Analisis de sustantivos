@@ -1,1 +1,63 @@
+# Del requisito a las clases: UnikStock
 
+Material de trabajo de Ingeniería de Software I (SIS3407), Unidad 3, diseño orientado a objetos. Lo hice a partir de mi especificación de requisitos de UnikStock.
+
+## Las cuatro razones que usé para descartar
+
+
+1. Es sinónimo o repetido: es lo mismo que otro sustantivo con otro nombre.
+2. Es solo un dato de otra clase: no tiene vida propia ni hace nada por sí solo.
+3. Queda fuera del sistema: es algo del mundo real, está fuera de mi alcance o es del documento y no del negocio.
+4. Es una acción, pantalla, medida o algo vago: no es una cosa que el sistema guarde.
+
+## Item 1 · Sustantivos subrayados (sin filtrar)
+
+
+**Propósito y alcance:** UnikStock, referencia, condiciones, desarrollador, dueño, copropietario, negocio, Unik Syle, producto, categoría, ropa, relojes, collares, gorras, nombre, variante, talla, color, modelo, precio, cantidad, stock, venta, descuento, alerta, nivel mínimo, historial, día, facturación electrónica, cobro con tarjeta, pasarela de pago, tienda en línea, carrito de compras, sucursal, tienda, reporte contable, impuestos.
+
+**Usuarios:** usuario, administrador, perchero, vitrina, libreta, inventario, mercancía, vendedor, medio tiempo, entrevista, pedido, proveedor, cliente, mostrador, papel, entrada, error, omisión, tensión, detalle, control.
+
+**Requisitos funcionales:** requisito, fecha, lista, panel, agotados, devolución, pieza, valor negativo, edición limitada, código, resultado, criterio de aceptación, origen, prioridad, relación, regla de negocio.
+
+**Requisitos no funcionales:** campo, paso, métrica, límite, diferencia, unidad, horario, consulta, búsqueda, catálogo, segundo, venta simultánea, tipo de variante, usabilidad, disponibilidad, desempeño, consistencia, flexibilidad.
+
+**Casos de uso y trazabilidad:** caso de uso, actor, escenario, flujo alterno, precondición, postcondición, objetivo, versión, cambio, revisión, dupla, comentario, enlace, prototipo, diagrama, tabla.
+
+## Item 2 · Mis clases candidatas
+
+
+Me quedaron siete clases:
+
+- Producto
+- Variante
+- Categoría
+- Venta
+- Devolución
+- Entrada de mercancía
+- Usuario
+
+## Item 3 · Qué sabe y qué hace cada clase
+
+
+| Clase | Qué sabe | Qué hace |
+|---|---|---|
+| **Producto** | su nombre, su código, su precio, su categoría y sus variantes | se busca por nombre o por código y muestra sus variantes disponibles |
+| **Variante** | su talla, color o modelo, cuánto stock tiene y su nivel mínimo | baja el stock al vender, lo sube con entradas y devoluciones, rechaza una venta que la deje en negativo y avisa si está agotada o bajo su mínimo |
+| **Categoría** | su nombre (ropa, relojes, collares o gorras) y qué tipo de variante usa | decide qué tipo de variante se pide al registrar un producto |
+| **Venta** | su fecha, las variantes que se vendieron y la cantidad de cada una | se registra, se rechaza si deja el stock en negativo y hace bajar el stock |
+| **Devolución** | su fecha, la variante y la cantidad devuelta | se registra y regresa la cantidad al stock |
+| **Entrada de mercancía** | su fecha, la variante y la cantidad que llegó | se registra y suma esa cantidad al stock |
+| **Usuario** | su rol (dueño o vendedor) | EN BLANCO: mis requisitos no dicen que el sistema guarde usuarios ni pida inicio de sesión, solo que el vendedor no decide qué se reabastece. Lo anoto para discutirlo en clase. |
+
+## Item 4 · Sustantivos que descarté y por qué
+
+*Cubre: punto 4, los sustantivos descartados y la razón de cada uno.*
+
+| Razón | Sustantivos descartados |
+|---|---|
+| **1. Es sinónimo o repetido** | mercancía y pieza (son Producto); inventario y catálogo (son el conjunto de productos con su stock); dueño, administrador, copropietario y vendedor (son los dos roles de Usuario). |
+| **2. Es solo un dato de otra clase** | nombre, precio, código, talla, color, modelo, tipo de variante, cantidad, stock, nivel mínimo, fecha, día, edición limitada, valor negativo, medio tiempo; ropa, relojes, collares y gorras (son valores de Categoría). |
+| **3. Queda fuera del sistema** | **Del mundo real o fuera de alcance:** cliente, proveedor, pedido, sucursal, tienda, negocio, Unik Syle, desarrollador, mostrador, perchero, vitrina, libreta, papel, facturación electrónica, cobro con tarjeta, pasarela de pago, tienda en línea, carrito de compras, reporte contable, impuestos.<br><br>**Del documento y no del negocio:** referencia, condiciones, entrevista, tensión, detalle, control, requisito, criterio de aceptación, origen, prioridad, relación, regla de negocio, métrica, caso de uso, actor, escenario, flujo alterno, precondición, postcondición, objetivo, versión, cambio, revisión, dupla, comentario, enlace, prototipo, diagrama, tabla. |
+| **4. Es una acción, pantalla, medida o algo vago** | UnikStock (es el sistema completo), descuento, alerta, historial, lista, agotados, panel, búsqueda, consulta, resultado, campo, paso, error, omisión, horario, segundo, unidad, límite, diferencia, venta simultánea, usabilidad, disponibilidad, desempeño, consistencia, flexibilidad. |
+
+**Dos descartes que podría discutir:** Alerta e Historial podrían ser clases, pero los dejé fuera porque salen de datos que ya tienen otras. La alerta sale de comparar el stock de una Variante con su mínimo, y el historial es una consulta sobre las Ventas.
