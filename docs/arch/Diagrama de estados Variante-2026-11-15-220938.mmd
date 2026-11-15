@@ -1,0 +1,8 @@
+stateDiagram-v2
+    [*] --> Disponible
+    Disponible --> BajoMinimo: una venta deja el stock debajo del minimo
+    Disponible --> Agotada: una venta deja el stock en cero
+    BajoMinimo --> Agotada: una venta deja el stock en cero
+    BajoMinimo --> Disponible: una entrada o devolucion sube el stock sobre el minimo
+    Agotada --> BajoMinimo: una entrada o devolucion sube el stock sin llegar al minimo
+    Agotada --> Disponible: una entrada o devolucion sube el stock sobre el minimo
