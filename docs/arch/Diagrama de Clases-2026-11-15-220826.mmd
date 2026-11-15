@@ -1,0 +1,42 @@
+classDiagram
+    class Categoria {
+        -nombre: string
+        -tipoDeVariante: string
+        +tipoDeVarianteRequerido() string
+    }
+    class Producto {
+        -nombre: string
+        -codigo: string
+        -precio: double
+        +coincideCon(texto) boolean
+        +consultarVariantes() List~Variante~
+    }
+    class Variante {
+        -descripcion: string
+        -stock: int
+        -nivelMinimo: int
+        +descontar(cantidad) boolean
+        +sumar(cantidad) void
+        +estaAgotada() boolean
+        +estaBajoMinimo() boolean
+    }
+    class Venta {
+        -fecha: Date
+        -cantidades: List~int~
+        +registrar() boolean
+    }
+    class Devolucion {
+        -fecha: Date
+        -cantidad: int
+        +registrar() void
+    }
+    class EntradaDeMercancia {
+        -fecha: Date
+        -cantidad: int
+        +registrar() void
+    }
+    Categoria "1" --> "*" Producto : agrupa
+    Producto "1" *-- "1..*" Variante : tiene
+    Venta "*" --> "1..*" Variante : vende
+    Devolucion "*" --> "1" Variante : regresa
+    EntradaDeMercancia "*" --> "1" Variante : suma
