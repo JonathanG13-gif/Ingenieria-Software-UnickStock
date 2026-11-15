@@ -1,0 +1,25 @@
+sequenceDiagram
+    actor Vend as Vendedor
+    participant Web as App web
+    participant Prod as Producto
+    participant Var as Variante
+    participant Ven as Venta
+
+    Vend->>Web: Busca el producto
+    Web->>Prod: coincideCon(texto)
+    Prod-->>Web: true
+    Web->>Prod: consultarVariantes()
+    Prod-->>Web: lista de variantes
+    Web-->>Vend: Muestra las variantes con su stock
+    Vend->>Web: Elige variante y cantidad y confirma
+    Web->>Ven: registrar()
+    Ven->>Var: descontar(cantidad)
+    alt hay stock suficiente
+        Var-->>Ven: true
+        Ven-->>Web: true
+        Web-->>Vend: Venta registrada y stock actualizado
+    else la venta dejaría el stock en negativo
+        Var-->>Ven: false
+        Ven-->>Web: false
+        Web-->>Vend: Rechaza la venta
+    end
