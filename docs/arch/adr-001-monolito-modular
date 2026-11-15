@@ -34,3 +34,5 @@ Descarté los microservicios porque, siendo yo una sola persona con dos usuarios
 
 **Lo malo:**
 - Si un módulo falla, puede tumbar todo el sistema.
+- Tengo que cuidar yo mismo la regla de que un módulo no lea las tablas de otro, porque nada me obliga a cumplirla.
+- Si algún día la tienda crece a varias sucursales, probablemente tenga que separar partes del sistema.
