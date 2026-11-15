@@ -20,7 +20,7 @@ Traducido a UnikStock: la clase Usuario, que dejé fuera de mi diagrama de clase
 | Caso de uso CU-01 Registrar venta | 2 | Nueva precondición: ya se sabe quién usa el sistema |
 | Caso de uso CU-07 Consultar historial de ventas por día | 2 | El resultado muestra una columna más |
 | Diagrama de clases | 4 | Entra Usuario (nombre y rol) y una relación de Venta con un solo Usuario |
-| Diagrama de secuencia | 4 | Todavía no tengo uno de UnikStock en el repositorio. Cuando lo haga, "registrar venta" tendrá un mensaje para saber quién es |
+| Diagrama de secuencia | 4 | CU-01 Registrar venta gana un mensaje para saber quién es el usuario, antes de `registrar()` |
 | Diagrama de componentes C4 (nivel 3) | 3 | Aparece un módulo nuevo, Usuarios. Ventas le pregunta quién es, sin leer sus tablas |
 
 ## Impacto indirecto
@@ -30,7 +30,7 @@ Traducido a UnikStock: la clase Usuario, que dejé fuera de mi diagrama de clase
 | Registro de decisión ADR-001 | 3 | La decisión de monolito modular sigue válida, pero su texto dice tres módulos y ahora serían cuatro. No lo edito: escribo un ADR-002 que registra el módulo nuevo |
 | Diagrama de contenedores C4 | 3 | Sin impacto: siguen siendo App web, Servidor y Base de datos |
 | Diagrama de contexto C4 | 3 | Sin impacto: las personas y los sistemas externos son los mismos |
-| Máquina de estados | 4 | Sin impacto: no tengo una de UnikStock y el cambio no agrega estados |
+| Máquina de estados | 4 | Sin impacto: los estados de Variante dependen del stock y el cambio no los toca |
 | RNF-USA-002 (máximo 3 pasos por venta) | 2 | Si pidiera identificarse en cada venta, lo rompería. Por eso la persona se identifica una sola vez al abrir el sistema |
 | Análisis de sustantivos | 4 | Usuario quedó descartado por estar fuera del sistema, y esa razón ya no es cierta |
 | Especificación, secciones 1 y 2 (alcance y usuarios) | 2 | Hay que revisar si dicen que el sistema no maneja usuarios |
