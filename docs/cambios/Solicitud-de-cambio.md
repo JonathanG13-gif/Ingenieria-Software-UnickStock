@@ -27,6 +27,8 @@ Nada grave, el sistema sigue funcionando y descontando bien el stock. Lo que se 
 - [x] **Perfectivo** · funciona, pero puede ser mejor. Hoy el historial cumple con RF-008 y lo que pido es que muestre un dato más.
 - [ ] **Preventivo** · todavía no falla, pero va a fallar
 
+**Justificacion** Es perfectivo porque el sistema ya funciona bien y descuenta el stock correctamente, y lo que pido es una mejora: que el historial muestre un dato más.
+
 ## Criterio de aceptación
 
 - Al abrir el historial de un día con ventas registradas por el dueño y por el vendedor, cada venta muestra el nombre de quien la registró.
