@@ -18,7 +18,7 @@ Cuando el stock que muestra el sistema no cuadra con lo que hay en el estante, h
 
 ## Qué pasa si no se hace
 
-Nada grave: el sistema sigue funcionando y descontando bien el stock. Lo que se pierde es la pista para encontrar el origen de un descuadre, que hoy se busca preguntándole a todos.
+Nada grave, el sistema sigue funcionando y descontando bien el stock. Lo que se pierde es la pista para encontrar el origen de un descuadre, que hoy se busca preguntándole a todos.
 
 ## Tipo de mantenimiento
 
