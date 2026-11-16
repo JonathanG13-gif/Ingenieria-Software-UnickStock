@@ -37,7 +37,6 @@ Traducido a UnikStock: la clase Usuario, que dejé fuera de mi diagrama de clase
 | Tabla de trazabilidad | 2 | Cambian las filas de RF-001 y RF-008, y falta la de RF-010 |
 | Prototipo en Figma | 2 | Las pantallas de venta e historial no muestran al usuario |
 | Ventas ya registradas | — | No tienen usuario guardado. Muestro "sin dato" y no invento quién fue |
-| Pruebas | — | Hay que repetir las de RF-001, RF-006 y RF-008 |
 | RNF-CON-001 (stock real y mostrado) | 2 | Sin impacto: el stock se calcula igual |
 | RNF-REN-001 (respuesta en menos de 5 segundos) | 2 | Sin impacto esperado: el historial lee una columna más |
 | RNF-DIS-001, RNF-FLE-001 y RNF-USA-001 | 2 | Sin impacto |
