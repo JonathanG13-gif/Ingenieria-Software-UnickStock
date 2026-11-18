@@ -7,3 +7,7 @@ Sistema de control de inventario para Unik Syle, una tienda de ropa y accesorios
 ## Prototipo navegable
 
 [Ver prototipo en Figma](https://www.figma.com/design/gcl8LpVofdz7FnqfA7Y04B/Prototipo--Community-?node-id=0-1&m=dev&t=oWjhfOKmqzWjSiWB-1)
+
+## Video Presentacion Final
+
+https://youtu.be/SSKM8I3uld0
